@@ -1,0 +1,6 @@
+baseURL = 'https://www.ishaenglish.com'
+languageCode = 'ru'
+title = 'Yogic English: начни понимать Садхгуру!'
+
+# This is a "one page"-website, so we do not need these kinds of pages...
+disableKinds = ["section", "taxonomy", "term", "RSS", "robotsTXT"]
