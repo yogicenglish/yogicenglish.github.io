@@ -21,7 +21,7 @@ function timeUntilDate(date) {
 	};
 }
 function prependZero(num) {
-  return (String(num).length < 2 ? '0' : "") + num;
+	return (String(num).length < 2 ? '0' : '') + num;
 }
 function updateTimer(date) {
 	var t = timeUntilDate(date);
@@ -32,8 +32,8 @@ function updateTimer(date) {
 	}
 
 	// Output the result in the timer
-  document.getElementById('days').innerHTML = prependZero(t.days);
-  document.getElementById('hours').innerHTML = prependZero(t.hours);
-document.getElementById('mins').innerHTML = prependZero(t.mins);
-  document.getElementById('secs').innerHTML = prependZero(t.secs);
+	document.getElementById('days').innerHTML = prependZero(t.days);
+	document.getElementById('hours').innerHTML = prependZero(t.hours);
+	document.getElementById('mins').innerHTML = prependZero(t.mins);
+	document.getElementById('secs').innerHTML = prependZero(t.secs);
 }
