@@ -96,7 +96,7 @@ header {
 	font-size: 30px;
 	font-weight: bold;
 	margin-bottom: 20px;
-	color: #000;
+	color: #333;
 }
 
 .hero-container .description {
@@ -142,6 +142,7 @@ header {
 }
 
 .hero-button,
+.tg-button,
 .cta-button {
 	font-size: 19px;
 	font-weight: bold;
@@ -155,25 +156,22 @@ header {
 	width: 400px;
 	transition: all 0.2s linear;
 	display: block;
-}
-
-.hero-button:hover,
-.telegram:hover,
-.cta-button:hover {
-	background-color: rgb(233 86 46);
-	animation: skew 0.5s ease-in-out 1;
-}
-
-.cta-button {
 	margin: 10px auto;
 	font-size: 19px;
 	max-width: 600px;
 }
 
-.telegram {
+.hero-button:hover,
+.tg-button:hover,
+.cta-button:hover {
+	background-color: rgb(233 86 46);
+	animation: skew 0.5s ease-in-out 1;
+}
+
+.tg-button {
 	background-color: #0088cc;
 }
-.telegram:hover {
+.tg-button:hover {
 	background-color: #0077bb;
 }
 
@@ -398,20 +396,32 @@ header {
 		height: auto !important;
 	}
 }
+/* telegram-section */
+.telegram-section {
+	background-color: #0088cc;
+	background-color: #fff7eb;
+	padding: 80px 0 80px;
+	text-align: center;
+	clip-path: polygon(0 0%, 100% 10%, 100% 100%, 0 90%);
+}
+.telegram-section .description {
+	text-align: left;
+	margin: 0 auto;
+	padding: 20px;
+	max-width: 700px;
+}
+.telegram-header {
+	color: #cf4521;
+	text-align: center;
+	margin-bottom: 30px;
+}
 
 /* testimonials */
 .testimonials {
-	background-color: #f7f7f7;
 	background-color: #0b045f;
 	padding: 80px 0 80px;
 	text-align: center;
 	clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-}
-
-.testimonials-header {
-	color: #02026b;
-	text-align: center;
-	margin-bottom: 30px;
 }
 
 .testimonials-boxes {
