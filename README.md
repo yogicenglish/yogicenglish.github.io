@@ -1,1 +1,6 @@
-# nginx-ui-update
+# Yogic English Website
+
+## Run
+```zsh
+hugo server
+```
